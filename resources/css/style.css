@@ -20,9 +20,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 6rem;
+  height: 8rem;
   width: 100%;
-  padding: 1.15%;
 }
 
 .leftside {
@@ -36,6 +35,10 @@ header {
   border-radius: 100%;
 }
 
+.circlepick img {
+  padding: 1.75rem;
+}
+
 .logo {
   font-family: 'Indie Flower', cursive;
   font-weight: bold;
@@ -44,14 +47,13 @@ header {
   text-align: left;
   line-height: 25%;
   vertical-align: top;
-  padding-left: 2rem;
+  padding-left: 3rem;
   min-width: 800px;
 }
 
 nav {
   margin-right: 2.5rem;
-  overflow: hidden;
-  width: 30%;
+  width: 70%;
 }
 
 nav a {
@@ -72,7 +74,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  background: url("../images/Niagra Falls4.JPG") no-repeat center center;
+  background: url("../images/Niagra Falls.JPG") no-repeat center top;
   background-size: cover;
   height: 40rem;
   width: 100%;
@@ -98,6 +100,8 @@ main {
   margin: 0 auto;
   width: 55rem;
 }
+
+
 
 /* need to play with this circle image in the banner */
 .booth {
@@ -151,6 +155,12 @@ main {
   text-align: center;
 }
 
+@media only screen and (max-width: 960px) {
+  .smart {
+    display: none;
+  }
+}
+
 .why-title {
   padding: 1rem;
 }
@@ -178,7 +188,7 @@ main {
 /* Who */
 .who {
   background-color: white;
-  height: 170rem;
+  height: auto;
   margin-bottom: 5rem;
 
 }
@@ -272,7 +282,7 @@ video {
   background-size: cover;
   align-self: flex-start;
   width: 55%;
-  height: 40rem;
+  height: auto;
   font-family: 'Butterfly Kids', cursive;
   font-size: 6rem;
   color: white;
@@ -306,7 +316,7 @@ video {
 }
 
 .gift-block {
-  width: 25%;
+  width: 30%;
   height: auto;
   font-family: Helvetica, sans-serif;
   text-align: center;
@@ -379,6 +389,54 @@ footer {
   align-items: center;
 }
 
+.brianbianca {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.brianbianca h2 {
+  font-family: 'Indie Flower', cursive;
+  color: Crimson;
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+.brianbianca ol {
+  margin-left: 3rem;
+}
+
+.brianbianca ol li {
+  font-family: Helvetica;
+  color: green;
+  padding-left: 0rem;
+  list-style-type: decimal;
+}
+
+.brianbianca p {
+font-family: Helvetica;
+color: green;
+padding-top: 1rem;
+padding-left: 10rem;
+}
+
+.brianbianca h3 {
+  font-family: 'Indie Flower', cursive;
+  color: green;
+  font-size: 2rem;
+  padding-top: 1rem;
+  padding-left: 13rem;
+}
+
+.bbwedd {
+  width: 50%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+
 footer img {
   width: 4rem;
   height: auto;
@@ -386,27 +444,97 @@ footer img {
 
 /* Responsive Design */
 
-@media only screen and (max-width: 1456px) and (min-width: 984px) {
+@media only screen and (max-width: 1400px) {
   nav {
-    margin-right: 1rem;
-    overflow: hidden;
-    width: 40%;
+    display: none;
   }
 
-  nav a {
-    font-family: Helvetica;
-    font-size: 1.2rem;
-    color: white;
-    margin: 0 1.5rem;
-    text-decoration: none;
+  .important {
+    display: none;
   }
 
+  .message {
+    font-size: 4.5rem;
+    flex-shrink: 2;
 }
 
-media only screen and (max-width: 660px) {
+@media only screen and (max-width: 1230px) {
+    .message {
+      font-size: 4rem;
+      line-height: 5.5rem;
+      margin: 2rem;
+    }
+
+@media only screen and (max-width: 1100px) {
+    .message {
+      font-size: 3.5rem;
+    }
+}
+
+@media only screen and (max-width: 965px) {
+  .banner {
+    background: url("../images/Niagra Falls4.JPG") no-repeat center center;
+    background-size: cover;
+    height: 30rem;
+  }
+
+  .message {
+    display: none;
+  }
+
+  .video-message {
+    justify-content: center;
+  }
+
+  .judah-title {
+    display: none;
+  }
+
+  .video {
+    width: 60%;
+  }
+  video {
+    margin: 2rem;
+  }
+}
+}
+
+@media only screen and (max-width: 864px) {
+
+  .logo {
+    display: none;
+  }
+
+  .ribbon, ribbontxt {
+  display: none;
+  }
+  .banner {
+    background: url("../images/IMG_3025.JPG") no-repeat center center;
+    background-size: cover;
+    height: 25rem;
+    width: 100%;
+  }
+
+  .why-title {
+    display: none;
+  }
+
+  .kind {
+    padding-top: 2rem;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 660px) {
   .logo {
     font-size: 1rem;
     line-height: 25%;
     padding-left: 1.5rem;
+  }
+
+  .banner {
+    background: url("../images/DSC_2888.jpg") no-repeat center center;
+    background-size: cover;
+    height: 20rem;
   }
 }
