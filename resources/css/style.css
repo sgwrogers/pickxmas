@@ -74,7 +74,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  background: url("../images/Niagra Falls.JPG") no-repeat center top;
+  background: url("../images/Niagra Falls.JPG") no-repeat center center;
   background-size: cover;
   height: 40rem;
   width: 100%;
